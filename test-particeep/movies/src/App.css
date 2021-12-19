@@ -1,0 +1,107 @@
+/** @format */
+
+.App {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  border: 1px solid #000;
+  height: 250px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: #000;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: unset;
+  margin-bottom: 5px;
+}
+.title {
+  margin: 10px auto;
+  font-weight: 700;
+  font-size: 1.2em;
+  width: 90%;
+}
+.category {
+  color: rgb(53, 9, 53);
+  font-size: 0.8em;
+}
+.jauge {
+  height: 8px;
+  width: 80%;
+  border: 1px solid #000;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+}
+.remove {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgba(231, 76, 60, 0.95);
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.likes {
+  height: 100%;
+  left: 0;
+  background-color: red;
+}
+.dislikes {
+  height: 100%;
+  right: 0;
+  background-color: rgb(53, 9, 53);
+}
+select {
+  background-color: rgb(53, 9, 53);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.resume {
+  color: rgb(53, 9, 53);
+  font-size: 0.65em;
+}
+.toggle {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  margin-left: 10px;
+}
+.fcLike,
+.fcDislikes {
+  display: flex;
+}
+.nbLikes,
+.nbDislikes {
+  margin-left: 5px;
+}
+.addLikes,
+.addDislikes {
+  cursor: pointer;
+}
