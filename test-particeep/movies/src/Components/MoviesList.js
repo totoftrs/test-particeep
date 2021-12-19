@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import CardMovie from './CardMovie';
 import Select from './Select';
+import Pagination from './Pagination';
 import { movies$ } from './../movies';
 
 const MoviesList = () => {
@@ -30,6 +31,22 @@ const MoviesList = () => {
   const handleChangeChoice = (event) => {
     setChoice(event.target.value);
   };
+  //Pagination à creuser $$ Merci pour le test ************************
+  const nbOfItems = 4;
+  const firstPage = () => {
+    console.log('firstPage');
+  };
+  const previous = () => {
+    console.log('previous');
+  };
+  const nextPage = () => {
+    console.log('nextPage');
+  };
+  const lastPage = () => {
+    console.log('lastPage');
+  };
+  var actualPage = 'X';
+  var maxPage = 'MAX';
 
   return (
     <>
@@ -38,6 +55,14 @@ const MoviesList = () => {
         allCategories={allCategories}
         choice={choice}
         handleChangeChoice={handleChangeChoice}
+      />
+      <Pagination
+        movies={movies}
+        firstPage={firstPage}
+        previous={previous}
+        actualPage={actualPage}
+        lastPage={lastPage}
+        maxPage={maxPage}
       />
       <div className='container'>
         {movies
